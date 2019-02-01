@@ -1,3 +1,3 @@
 # Effort-Experiment
 
-# Raw data for changes in Effort experiment.
+Raw data for changes in Effort experiment.
