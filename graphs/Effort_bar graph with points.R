@@ -1,6 +1,6 @@
-setwd("E:/Effort")
 
-data<- read.csv("for r.csv")
+data<- read.csv("graphs/for r.csv")
+
 str(data)
 
 library(tidyverse)
@@ -71,7 +71,7 @@ plot+ theme(axis.line = element_line(colour = "black"),
             axis.text.x=element_text(size=17),
             axis.text.y=element_text(size=17))+
   xlab("\nEffort")+
-  ylab("Mean±SEM\n")+
+  ylab("Mean?SEM\n")+
   ggtitle(my_title)+
   coord_cartesian(ylim=c(0,30,10))
 #scale_y_continuous(expand = c(0, 0)) this is to have the X axis starting at 0

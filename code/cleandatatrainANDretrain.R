@@ -1,6 +1,7 @@
 ## Code for training and retraining data:
 
 source("functions/trainANDretrain.R")
+source("raw data")
 
 fun2 <- function(x){
   cleandata1.1 <-cleandata1(x)
@@ -16,7 +17,7 @@ fun2 <- function(x){
 # how to import multiple files at once
 
 #setwd("Whatever working directory.cv") #set working directory
-temp <- list.files(pattern="*.csv")
+temp <- list.files(path="raw data/csv train", pattern="*.csv")
 myfiles <- lapply(temp, read.csv)
 #lapply(myfiles, head)
 
